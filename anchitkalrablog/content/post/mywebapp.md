@@ -2,8 +2,8 @@
 title: "My New(ish) Analytics Web App."
 date: 2015-01-23T04:01:35-08:00
 Description: "Develop a system which facilitates communication for resource assignments between Test leads and offshore contractors."
-Tags: []
-Categories: []
+Tags: [development, analytics, data]
+Categories: [development]
 DisableComments: false
 ---
 
@@ -31,5 +31,3 @@ Reports:
 
 ![report2.jpg](/image/report2.jpg)
 
-
-{{< clicky >}}
