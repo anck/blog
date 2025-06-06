@@ -14,7 +14,8 @@ jobs:
       run: |
         mkdir -p ~/.ssh && chmod 700 ~/.ssh && touch ~/.ssh/known_hosts
         chmod 600 ~/.ssh/known_hosts
-        cat ~/.ssh/known_hosts
+        cat ~/.ssh/known_hosts >> $GITHUB_OUTPUT
+        echo ${{ join(steps.run_tests.outputs.*), "\n" }}
         echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
         echo "$SSH_KEY" > ssh_key.pem
         chmod 600 ssh_key.pem
