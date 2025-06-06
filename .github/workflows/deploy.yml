@@ -24,7 +24,8 @@ jobs:
     - name: Deploy to GCP VM
       env:
         VM_IP: ${{ secrets.GCP_VM_IP }}
-        SSH_KEY: | ${{ secrets.GCP_SSH_KEY }}
+        SSH_KEY: |
+         ${{ secrets.GCP_SSH_KEY }}
         REMOTE_DIR: /var/www/html
       run: |
         echo "$SSH_KEY" > ssh_key.pem
