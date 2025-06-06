@@ -34,7 +34,7 @@ jobs:
         REMOTE_DIR: /var/www/html
         SSH_KNOWN_HOSTS: ${{ secrets.KNOWN_HOSTS }}
       run: |
-        echo cat ~/.ssh/known_hosts
+        cat ~/.ssh/known_hosts
         echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
         echo "$SSH_KEY" > ssh_key.pem
         chmod 600 ssh_key.pem
