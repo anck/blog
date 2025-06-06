@@ -28,6 +28,7 @@ jobs:
          ${{ secrets.GCP_SSH_KEY }}
         REMOTE_DIR: /var/www/html
       run: |
+        echo $SSH_KEY
         echo "$SSH_KEY" > ssh_key.pem
         chmod 600 ssh_key.pem
         rsync -avz -e "ssh -i ssh_key.pem" anchitkalrablog/public/ anchit_kal@$VM_IP:$REMOTE_DIR
