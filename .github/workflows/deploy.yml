@@ -31,7 +31,7 @@ jobs:
     - name: Deploy to GCP VM
       shell: bash
       env:
-        VM_IP: ${GCP_VM_IP}
+        VM_IP: ${{ vars.GCP_VM_IP }}
         REMOTE_DIR: /usr/share/nginx/html
       run: |
         echo "STARTING DEPLOYMENT"
