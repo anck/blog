@@ -32,12 +32,11 @@ jobs:
       shell: bash
       env:
         VM_IP: 34.66.106.3
-        REMOTE_DIR: /var/www/html
+        REMOTE_DIR: /usr/share/nginx/html
       run: |
         echo "STARTING DEPLOYMENT"
         ssh-keyscan $VM_IP >> ~/.ssh/known_hosts
         cd ~/.ssh/
-        echo "${{ secrets.GCP_SSH_KEY }}"
         echo "${{ secrets.GCP_SSH_KEY }}" > ssh_key.pem
         chmod 0400 ssh_key.pem
         rsync -avz -e "ssh -i ~/.ssh/ssh_key.pem" anchitkalrablog/public/ anchit_kal@$VM_IP:$REMOTE_DIR
