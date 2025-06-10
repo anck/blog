@@ -1,6 +1,6 @@
 ---
 title: "How to Prioritize Like a Pro (Without Losing Your Sanity)"
-date: 2025-02-15T22:24:25-09:00
+date: 2025-02-17T22:24:25-09:00
 Description: "How to Prioritize Like a Pro (Without Losing Your Sanity)"
 Tags: ["program-managment", "development"]
 Categories: [program-managment, development, testing]
