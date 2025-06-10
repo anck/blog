@@ -13,31 +13,33 @@ jobs:
     - name: Setup SSH
       run: |
         mkdir -p ~/.ssh && chmod 700 ~/.ssh
-        touch ~/.ssh/known_hosts
-        chmod 600 ~/.ssh/known_hosts
-        cat ~/.ssh/known_hosts >> $GITHUB_OUTPUT
-        echo ${{ join(steps.run_tests.outputs.*), "\n" }}
-        echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
-        echo "$SSH_KEY" > ssh_key.pem
-        chmod 600 ssh_key.pem
-
+    
     - name: Checkout Code
       uses: actions/checkout@v3
 
     - name: Install Hugo
+      shell: bash
       run: |
-        sudo apt-get update
-        sudo apt-get install -y hugo
+        apt-get update
+        apt-get install -y hugo
+        apt-get install -y rsync
 
     - name: Build Hugo Site
+      shell: bash
       run: hugo -s anchitkalrablog
 
     - name: Deploy to GCP VM
+      shell: bash
       env:
-        VM_IP: ${{ secrets.GCP_VM_IP }}
-        SSH_KEY: |
-         ${{ secrets.GCP_SSH_KEY }}
+        VM_IP: 34.66.106.3
         REMOTE_DIR: /var/www/html
-        SSH_KNOWN_HOSTS: ${{ secrets.KNOWN_HOSTS }}
       run: |
-        rsync -avz -e "ssh -i ssh_key.pem" anchitkalrablog/public/ anchit_kal@$VM_IP:$REMOTE_DIR
+        echo "STARTING DEPLOYMENT"
+        ssh-keyscan $VM_IP >> ~/.ssh/known_hosts
+        cd ~/.ssh/
+        echo "${{ secrets.GCP_SSH_KEY }}"
+        echo "${{ secrets.GCP_SSH_KEY }}" > ssh_key.pem
+        chmod 0400 ssh_key.pem
+        rsync -avz -e "ssh -i ~/.ssh/ssh_key.pem" anchitkalrablog/public/ anchit_kal@$VM_IP:$REMOTE_DIR
+
+    
