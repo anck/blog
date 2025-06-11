@@ -26,7 +26,7 @@ jobs:
 
     - name: Build Hugo Site
       shell: bash
-      run: hugo -b anchitkalrablog
+      run: hugo -s anchitkalrablog
 
     - name: Deploy to GCP VM
       shell: bash
