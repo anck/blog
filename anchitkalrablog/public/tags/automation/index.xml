@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automation on Anchit Kalra&#39;s Blog</title>
+    <link>/tags/automation/</link>
+    <description>Recent content in Automation on Anchit Kalra&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Oct 2015 11:49:55 -0800</lastBuildDate><atom:link href="/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automating certificates for Smartcard Setup On XenDesktop</title>
+      <link>/post/smartcard/</link>
+      <pubDate>Tue, 20 Oct 2015 11:49:55 -0800</pubDate>
+      
+      <guid>/post/smartcard/</guid>
+      
+        <description>Smartcard Setup On XenDesktop</description>
+      
+    </item>
+    
+    <item>
+      <title>Developing Test Framework With Selenium and Test-NG</title>
+      <link>/post/testng/</link>
+      <pubDate>Sun, 18 Oct 2015 22:00:23 -0800</pubDate>
+      
+      <guid>/post/testng/</guid>
+      
+        <description>Test-NG</description>
+      
+    </item>
+    
+    <item>
+      <title>Testing Research</title>
+      <link>/post/testingresearch/</link>
+      <pubDate>Wed, 29 Jul 2015 01:59:54 -0800</pubDate>
+      
+      <guid>/post/testingresearch/</guid>
+      
+        <description>Testing Research</description>
+      
+    </item>
+    
+  </channel>
+</rss>

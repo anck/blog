@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Program Managment on Anchit Kalra&#39;s Blog</title>
+    <link>/categories/program-managment/</link>
+    <description>Recent content in Program Managment on Anchit Kalra&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Feb 2025 22:24:25 -0900</lastBuildDate><atom:link href="/categories/program-managment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Prioritize Like a Pro (Without Losing Your Sanity)</title>
+      <link>/post/priority/</link>
+      <pubDate>Mon, 17 Feb 2025 22:24:25 -0900</pubDate>
+      
+      <guid>/post/priority/</guid>
+      
+        <description>How to Prioritize Like a Pro (Without Losing Your Sanity)</description>
+      
+    </item>
+    
+    <item>
+      <title>Slowest Victory Or Noise Before Defeat?</title>
+      <link>/post/stratergy/</link>
+      <pubDate>Sun, 25 Jun 2023 09:50:00 -0800</pubDate>
+      
+      <guid>/post/stratergy/</guid>
+      
+        <description>Slowest Victory Or Noise Before Defeat?</description>
+      
+    </item>
+    
+  </channel>
+</rss>

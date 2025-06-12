@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scripting on Anchit Kalra&#39;s Blog</title>
+    <link>/tags/scripting/</link>
+    <description>Recent content in Scripting on Anchit Kalra&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Oct 2015 11:49:55 -0800</lastBuildDate><atom:link href="/tags/scripting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automating certificates for Smartcard Setup On XenDesktop</title>
+      <link>/post/smartcard/</link>
+      <pubDate>Tue, 20 Oct 2015 11:49:55 -0800</pubDate>
+      
+      <guid>/post/smartcard/</guid>
+      
+        <description>Smartcard Setup On XenDesktop</description>
+      
+    </item>
+    
+  </channel>
+</rss>
