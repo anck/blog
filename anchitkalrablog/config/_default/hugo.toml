@@ -1,4 +1,4 @@
-baseURL = "https://anck.github.io/"
+baseURL = ""
 languageCode = 'en-us'
 title = "Anchit Kalra's Blog"
 theme = "anatole"
